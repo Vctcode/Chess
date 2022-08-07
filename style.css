@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90.78deg, #7B388D -0.94%, #141A7B 112.6%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: cover;
+    padding: 20px 150px;
+    height: 100vh;
+}
+
+.container>div {
+    padding: 5px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>div.even:hover {
+    opacity: 0.8;
+    transform: matrix3d();
+}
+
+.container>div.odd {
+    background: linear-gradient(44.32deg, #DEDEDE 21.69%, #FFFFFF 51.34%, #D4D3D3 76.68%);
+}
+
+.container>div.even {
+    background: linear-gradient(135.6deg, #000000 30.49%, #202020 49.46%, #000000 79.12%);
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    /*minimum and maximum grid width*/
+    grid-template-rows: repeat(8, 80px);
+    justify-content: center;
+}
+
